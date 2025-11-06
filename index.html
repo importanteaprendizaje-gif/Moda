@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Marcas de Moda de Alta Costura</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Georgia", serif;
+        background-color: #0f0f0f;
+        color: #ffffff;
+    }
+
+    header {
+        background: linear-gradient(to right, #b29048, #d4af37);
+        padding: 20px;
+        text-align: center;
+        color: black;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #1b1b1b;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+    }
+
+    nav button {
+        background: none;
+        border: 1px solid #d4af37;
+        color: #d4af37;
+        margin: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    nav button:hover {
+        background-color: #d4af37;
+        color: black;
+    }
+
+    section {
+        padding: 40px;
+        border-bottom: 1px solid #333;
+    }
+
+    h2 {
+        color: #d4af37;
+        font-size: 28px;
+        border-left: 5px solid #d4af37;
+        padding-left: 10px;
+    }
+
+    .marca-container {
+        display: flex;
+        gap: 25px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .marca-container img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid #d4af37;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    footer {
+        background-color: #1b1b1b;
+        text-align: center;
+        padding: 15px;
+        color: #d4af37;
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+function irA(seccion){
+    document.getElementById(seccion).scrollIntoView({ behavior: "smooth" });
+}
+</script>
+</head>
+
+<body>
+
+<header>Marcas de Moda de Alta Costura</header>
+
+<nav>
+    <button onclick="irA('intro')">Introducción</button>
+    <button onclick="irA('dior')">Dior</button>
+    <button onclick="irA('chanel')">Chanel</button>
+    <button onclick="irA('prada')">Prada</button>
+    <button onclick="irA('versace')">Versace</button>
+    <button onclick="irA('hermes')">Hermés</button>
+    <button onclick="irA('lv')">Louis Vuitton</button>
+    <button onclick="irA('gucci')">Gucci</button>
+</nav>
+
+<section id="intro">
+    <h2>Introducción</h2>
+    <p>
+        La moda de alta costura es una expresión artística que refleja elegancia, estatus y creatividad.
+        Las grandes marcas de lujo han dejado huella en la historia gracias a sus diseños icónicos,
+        su impacto cultural y la visión de sus fundadores. A continuación, exploraremos siete de las
+        casas de moda más influyentes del mundo.
+    </p>
+</section>
+
+<!-- Dior -->
+<section id="dior">
+    <h2>Dior</h2>
+    <div class="marca-container">
+        <img src="img/Dior.jpg" alt="Logo Dior">
+        <img src="img/Christian Dior.jpg" alt="Christian Dior">
+    </div>
+    <p>
+        **Christian Dior**, fundador de la marca en 1946, revolucionó la moda con el icónico 
+        "New Look", caracterizado por siluetas femeninas, faldas amplias y cinturas marcadas.
+        Hoy en día, Dior continúa siendo símbolo de glamour y elegancia mundial.
+    </p>
+</section>
+
+<!-- Chanel -->
+<section id="chanel">
+    <h2>Chanel</h2>
+    <div class="marca-container">
+        <img src="img/Chanel.jpg" alt="Logo Chanel">
+        <img src="img/Coco Chanel.jpg" alt="Coco Chanel">
+    </div>
+    <p>
+        **Coco Chanel**, fundadora en 1910, transformó el vestir femenino al introducir diseños cómodos,
+        simples y elegantes. Su legado incluye el traje de tweed, el bolso acolchado y el famoso perfume Chanel No. 5.
+    </p>
+</section>
+
+<!-- Prada -->
+<section id="prada">
+    <h2>Prada</h2>
+    <div class="marca-container">
+        <img src="img/Prada.jpg" alt="Logo Prada">
+        <img src="img/Mario Prada.jpg" alt="Mario Prada">
+    </div>
+    <p>
+        Fundada por **Mario Prada** en 1913, inicialmente se especializó en artículos de cuero exclusivos.
+        Con el tiempo, Prada se convirtió en un referente de estilo minimalista y sofisticado.
+    </p>
+</section>
+
+<!-- Versace -->
+<section id="versace">
+    <h2>Versace</h2>
+    <div class="marca-container">
+        <img src="img/Versace.jpg" alt="Logo Versace">
+        <img src="img/Gianni Versace.jpg" alt="Gianni Versace">
+    </div>
+    <p>
+        **Gianni Versace** fundó la marca en 1978, conocida por su estilo audaz, glamuroso y lleno de color.
+        Su influencia en la cultura pop convirtió a Versace en icono del lujo moderno.
+    </p>
+</section>
+
+<!-- Hermés -->
+<section id="hermes">
+    <h2>Hermés</h2>
+    <div class="marca-container">
+        <img src="img/Hermés.jpg" alt="Logo Hermés">
+        <img src="img/Thierry Hermés.jpg" alt="Thierry Hermés">
+    </div>
+    <p>
+        Fundada por **Thierry Hermés** en 1837, inicialmente como taller ecuestre, Hermés evolucionó para 
+        convertirse en una marca prestigiosa reconocida por la artesanía refinada y sus bolsos icónicos.
+    </p>
+</section>
+
+<!-- Louis Vuitton -->
+<section id="lv">
+    <h2>Louis Vuitton</h2>
+    <div class="marca-container">
+        <img src="img/Louis Vuitton.jpg" alt="Logo Louis Vuitton">
+        <img src="img/Louis Vuitton Fundador.jpg" alt="Louis Vuitton">
+    </div>
+    <p>
+        **Louis Vuitton** comenzó en 1854 diseñando baúles y maletas de viaje de lujo. Con el tiempo,
+        su monograma se convirtió en uno de los símbolos más reconocidos del mundo.
+    </p>
+</section>
+
+<!-- Gucci -->
+<section id="gucci">
+    <h2>Gucci</h2>
+    <div class="marca-container">
+        <img src="img/Gucci.jpg" alt="Logo Gucci">
+        <img src="img/Guccio Gucci.jpg" alt="Guccio Gucci">
+    </div>
+    <p>
+        Fundada por **Guccio Gucci** en 1921, la marca se destaca por mezclar sofisticación con modernidad.
+        Sus diseños influyen fuertemente en la moda global.
+    </p>
+</section>
+
+<footer>
+    Creado para fines educativos • Estilo Elegante & Oro Negro
+</footer>
+
+</body>
+</html>
